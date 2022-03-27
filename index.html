@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -19,6 +20,19 @@
     }
   </script>
   <!-- Docsify v4 -->
+  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: '53aaf90e57c13b994903',
+    clientSecret: '5480beb2229c9b166ff02aaabe9a3ebc759a3d51',
+    repo:'https://github.com/fuyanbo123/docsify.git',
+    owner: 'fuyanbo123',
+    admin: ['fuyanbo123'],
+    // facebook-like distraction free mode
+    distractionFreeMode: false
+  })
+</script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
 </html>
